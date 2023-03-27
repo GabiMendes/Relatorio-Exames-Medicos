@@ -102,6 +102,8 @@ struct Paciente* inicializarPrograma(int* numeroPacientes) {
     printf("Digite o numero de pacientes: ");
     scanf("%d", numeroPacientes);
 
+
+    //O código abaixo apresenta bugs a serem resolvidos em próximas versões sobre alocação dinâmica de memória e, consequentemente, inicialização do programa.
     // Aloca memória para o vetor de ponteiros para struct Paciente
     struct Paciente** vetor = (struct Paciente**) malloc((*numeroPacientes) * sizeof(struct Paciente*));
     if (vetor == NULL) {
